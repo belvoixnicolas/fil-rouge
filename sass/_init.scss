@@ -1,0 +1,26 @@
+@import 'compass';
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import 'sprit';
+
+html, body, * {
+    @include box-sizing(border-box);
+}
+
+
+// base //
+@mixin police($taille, $align) {
+    font: {
+        family: 'trebuchet MS', 'Roboto', sans-serif;
+        size: $taille;
+    }
+    text-align: $align;
+}
+
+$titre: 60px;
+$sous_titre: 36px;
+$nav: 22px;
+$text: 16px;
+$nom: 18px;
+// base //
